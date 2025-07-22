@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rotion-50: oklch(0.939 0.008 304);
+  --color-rotion-100: oklch(0.819 0.014 304);
+  --color-rotion-200: oklch(0.722 0.023 305);
+  --color-rotion-300: oklch(0.577 0.043 307);
+  --color-rotion-400: oklch(0.473 0.042 307);
+  --color-rotion-500: oklch(0.329 0.043 304);
+  --color-rotion-600: oklch(0.305 0.037 306);
+  --color-rotion-700: oklch(0.256 0.033 306);
+  --color-rotion-800: oklch(0.211 0.028 305);
+  --color-rotion-900: oklch(0.181 0.02 303);
+}
+
+@utility region-drag {
+  -webkit-app-region: drag;
+}
+
+@utility region-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+html {
+  overflow: hidden;
+}
