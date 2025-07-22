@@ -12,6 +12,27 @@
   --color-rotion-700: oklch(0.256 0.033 306);
   --color-rotion-800: oklch(0.211 0.028 305);
   --color-rotion-900: oklch(0.181 0.02 303);
+
+  --animate-slideIn: slideIn 0.25s ease-out;
+  --animate-slideOut: slideOut 0.25s ease-out;
+
+  @keyframes slideIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--radix-collapsible-content-width);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      width: var(--radix-collapsible-content-width);
+    }
+    to {
+      width: 0;
+    }
+  }
 }
 
 @utility region-drag {
